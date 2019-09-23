@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <style>
+        b{
+            /* 요소 선택자 */
+            color: red;
+        }
+        .c_name{
+            /* 클래스 선택자 */
+            color: green;
+        }
+        #i_name{
+            /* 아이디 선택자 */
+            color: pink;
+        }
+        /* 정보가 아니라 꾸미는 것임 ex.★,♥ */
+        #i_name2::before{ content: "♪";}
+        #i_name2::after{ content: "♬"}
+        #i_name2::first-letter{font-size: 60px;}
+        #i_name2::first-line{color: violet;}
+         
+        .con:first-child{ color: blue;}
+        .con:last-child{ color:red;}
+        .con:nth-child(4){ color:yellow;}
+        /* ul이 부모고 li가 child, first-child는 첫째아이만, nth-child(n) N번째 아이 선택 가능*/
+1
+        </style>
+    </head>
+    <body>
+        <b>내용1</b>
+        <div class="c_name"">클래스</div>
+        <div id="i_name">아이디</div>
+        <!-- 하나의 class는 어러태그로 나눠 쓸 수 있지만 하나의 id는 하나 밖에 안된다-->
+
+        <div id="i_name2">가상요소 선택자</div>
+
+        <ul>
+            <li class="con">내용1</li>
+            <li class="con">내용2</li>
+            <li class="con">내용3</li>
+            <li class="con">내용4</li>
+            <li class="con">내용4.1</li>
+            <li class="con">내용5</li>
+        </ul>
+
+        <style>
+            /* :link 기본, :visited 이곳에 한번 방문한 적이 있음, :hover 마우스 올림, focus 마우스 눌르고 있는 동안의 색*/
+            a:link{ color: black; text-decoration:none;}
+            a:visited{ color:green; text-decoration: none;}
+            a:hover{ color:red;}
+            a:active{ color: yellow;}
+            a:focus{ color:pink;}
+
+        </style>
+        <a href="#">링크 버튼</a>
+        <!-- #은 내 자신 -->
+        
+    </body>
+</html>
