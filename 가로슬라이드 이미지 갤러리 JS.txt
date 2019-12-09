@@ -1,0 +1,59 @@
+<style>
+    #b_red{
+        background-color: red;
+    }
+    #b_blue{
+        background-color: blue;
+    }
+    #b_yellow{
+        background-color: yellow;
+    }
+    #b_green{
+        background-color: green;
+    }
+    [id*="b_"]{
+        width: 25%;
+        height: 200px;
+        float: left;
+    }
+    #container{
+        width: 400%;
+        position: absolute;
+        transition: left 0.5s;
+    }
+    .m_0{ left: 0% }
+    .m_1{ left: -100% }
+    .m_2{ left: -200% }
+    .m_3{ left: -300% }
+    #frame{
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    .clear{
+        clear: both;
+        height: 0px;
+        overflow: hidden;
+    }
+"가로 슬라이드 이미지 갤러리"
+</style>
+<script>
+    function change_con(idx){
+        var target = document.getElementById("container");
+        target.classList = ""
+        target.classList.add("m_"+idx);
+    }
+</script>
+<div id="frame">
+    <div id="container" class="m_0">
+        <div id="b_red">content1</div>
+        <div id="b_blue">content2</div>
+        <div id="b_yellow">content3</div>
+        <div id="b_green">content4</div>
+        <div class="clear"></div>
+    </div>
+</div>
+<button onclick="change_con(0)">content1</button>
+<button onclick="change_con(1)">content2</button>
+<button onclick="change_con(2)">content3</button>
+<button onclick="change_con(3)">content4</button>

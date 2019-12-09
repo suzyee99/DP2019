@@ -1,0 +1,36 @@
+"배경색 변화"
+<style>
+    #with_css{
+        background-color: red;
+        transition: background-color 2s;
+    }
+    #with_css:hover{
+        background-color: green;
+    }
+    #with_javascript{
+        transition: background-color 2s;
+    }
+    .color_red{
+        background-color: red;
+    }
+    .color_green{
+        background-color: green;
+    }
+</style>
+<script>
+    function over_func(){
+        var element = document.getElementById( 'with_javascript' );
+        element.classList.add('color_green');
+        element.classList.remove('color_red');
+    }
+    function out_func(){
+        var element = document.getElementById( 'with_javascript' );
+        element.classList.add('color_red');
+        element.classList.remove('color_green');
+    }
+</script>
+<div id="with_css">with css</div>
+<div id="with_javascript" class="color_red" 
+onmouseover="over_func()" onmouseout="out_func()">
+    with javascript
+</div>

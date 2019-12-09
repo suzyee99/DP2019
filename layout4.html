@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout4</title>
+        <meta charset="utf-8"/>
+        <style>
+            #wrap{
+                min-width: 1100px;
+                max-width: 1920px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            header{
+                padding: 30px 0 60px 40px;
+            }
+            header>h1{
+                color: red;
+                margin: 0;
+                float: left;
+            }
+            header>nav{
+                float: right;
+            }
+            header li{
+                float: left;
+                list-style: none;
+                padding: 0px 100px 0px 0px;
+                color: rgb(80, 80, 80);
+            }
+            .clear{
+                clear: both; height: 0px; overflow: hidden;
+            }
+            nav li{
+                list-style: none;
+            }
+            a{
+                color: inherit;
+                text-decoration:none
+            }
+            #navigation{
+                float: left;
+                line-height: 60px;
+            }
+            .career{
+                float: right;
+                width: calc(100% - 278px);
+                margin: auto;
+            }
+            .card{
+                background-color: #eee;
+                background-image: url("images/layout4/background.jpg");
+                border-radius: 15px;
+                padding: 20px;
+                margin-bottom: 20px;
+                /* margin-left: 100px; */
+                margin-left: auto;
+                margin-right: auto;
+                width: 670px;
+            }
+            .career li{
+                list-style: none;
+            }
+            .visual{
+                float: left;
+                margin-right: 50px;
+                margin-left: 10px;
+            }
+            .visual img{
+                width: 250px;
+                margin-right: 20px;
+            }
+            .visual_title{
+                font-size: 8pt;
+            }
+            .content{
+                float: right;
+                width: 300px;
+                margin-right: 30px;
+            }
+            .content dd{
+                margin: 0px;
+                margin-top: 2px;
+                font-size: 12px;
+            }
+            .long_line{
+                width: 90px;
+                height: 0px;
+                border-bottom: solid 1px gray;
+                margin: 10px 0px;
+            }
+            footer{
+                margin: 0 40px;
+                font-size: 8pt;
+                line-height: 5pt;
+            }
+            footer p{
+                margin-left: 30px;
+            }
+            footer ul{
+                padding: 10px;
+            }
+            footer ul>li{
+                float: left;
+                list-style: none;
+                color: rgb(80, 80, 80);
+                padding-right: 20px;
+                padding-left: 20px;
+                font-size: 10pt;
+                border-right: solid 1px #aaa;
+            }
+            footer ul>li:nth-child(5){
+                border: none;
+            }
+            #footer2 li:nth-child(4){
+                border: none;
+            }
+            footer div{
+                float: left;
+            }
+            #footer2{
+                float: right;
+            }
+            #footer1{
+                margin-bottom: 20px;
+            }
+            @media (max-width: 800px){
+                .career li{
+                    margin-left: 0px;
+                    width: 300px;
+                }
+                .career>ol{
+                    padding-left: 0px;
+                }
+                .content{
+                    float: none;
+                }
+                .visual{
+                    margin-bottom: 10px;
+                    margin-right: 0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1>PICASSO</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">index</a></li>
+                        <li><a href="layout1.html">layout1</a></li>
+                        <li><a href="layout2.html">layout2</a></li>
+                        <li><a href="layout3.html">layout3</a></li>
+                        <li><a href="layout4.html">layouy4</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <nav id="navigation">
+                <ul>
+                    <li>HOME</li>
+                    <li>CAREER</li>
+                    <li>GALLERY</li>
+                    <li>ABOUT HIM</li>
+                    <li>CONTACT</li>
+                </ul>
+            </nav>
+            <div class="career">
+                <h2>CAREER</h2>
+                <ol>
+                    <li class="card">
+                        <div class="visual">
+                            <img src="images/layout4/career01_Picasso1903_La_Vie.jpg" alt="Pablo Picasso - La Vie (1903)"/>
+                            <div class="visual_title">Pablo Picasso - La Vie (1903)</div>
+                        </div>
+                        <div class="content">
+                            <dl>
+                                <dt>Blue Period</dt>
+                                <dd>
+                                    <div>1901 – 1904</div>
+                                    <div class="long_line"></div>
+                                    <p>Picasso's Blue Period (1901–1904), characterized by sombre paintings rendered in shades of blue and blue-green, only occasionally warmed by other colours, began either in Spain in early 1901, or in Paris in the second half of the year.</p>
+                                    <div class="long_line"></div>
+                                    <div>Read More →</div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li class="card">
+                        <div class="visual">
+                            <img src="images/layout4/career02_Pablo_Picasso_1904-05,_Les_Baladins.jpg" alt="Pablo Picasso - Les Baladins (1904-1905)"/>
+                            <div class="visual_title">Pablo Picasso - Les Baladins (1904 - 1905)</div>
+                        </div>
+                        <div class="content">
+                            <dl>
+                                <dt>Rose Period</dt>
+                                <dd>
+                                    <div>1904 – 1906</div>
+                                    <div class="long_line"></div>
+                                    <p>The Rose Period (1904–1906) is characterized by a lighter tone and style utilizing orange and pink colours, and featuring many circus people, acrobats and harlequins known in France as saltimbanques. The harlequin, a comedic character usually depicted in checkered patterned clothing, became a personal symbol for Picasso.</p>
+                                    <div class="long_line"></div>
+                                    <div>Read More →</div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li class="card">
+                        <div class="visual">
+                            <img src="images/layout4/career03_Pablo_Picasso_1907_Les_Demoiselles_d'Avignon.jpg" alt="Pablo Picasso - Les Demoiselles d'Avignon(1907)"/>
+                            <div class="visual_title">Pablo Picasso - Les Demoiselles d'Avignon (1907)</div>
+                        </div>
+                        <div class="content">
+                            <dl> 
+                                <dt>African art and Primitivism</dt>
+                                <dd>
+                                    <div>1907 – 1909</div>
+                                    <div class="long_line"></div>
+                                    <p>Picasso's African-influenced Period (1907–1909) begins with his painting Les Demoiselles d'Avignon. Picasso painted this composition in a style inspired by Iberian sculpture, but repainted the faces of the two figures on the right after being powerfully impressed by African artefacts he saw in June 1907 in the ethnographic museum at Palais du Trocadéro.</p>
+                                    <div class="long_line"></div>
+                                    <div>Read More →</div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li class="card">
+                        <div class="visual">
+                            <img src="images/layout4/career04_Pablo_Picasso_1910_Girl_with_a_Mandolin.jpg" alt="Pablo Picasso - Girl with a Mandolin (1910)"/>
+                            <div class="visual_title">Pablo Picasso - Girl with a Mandolin (1910)</div>
+                        </div>
+                        <div class="content">
+                            <dl>
+                                <dt>Analytic cubism</dt>
+                                <dd>
+                                    <div>1909 – 1912</div>
+                                    <div class="long_line"></div>
+                                    <p>Analytic cubism (1909–1912) is a style of painting Picasso developed with Georges Braque using monochrome brownish and neutral colours. Both artists took apart objects and "analyzed" them in terms of their shapes. Picasso and Braque's paintings at this time share many similarities.</p>
+                                    <div class="long_line"></div>
+                                    <div>Read More →</div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li class="card">
+                        <div class="visual">
+                            <img src="images/layout4/career05_Pablo_Picasso1913-14_head.jpg" alt="Pablo Picasso - head (1913 - 1914)"/>
+                            <div class="visual_title">Pablo Picasso - head (1913 - 1914)</div>
+                        </div>
+                        <div class="content">
+                            <dl>
+                                <dt>Synthetic cubism</dt>
+                                <dd>
+                                    <div>1912 – 1919</div>
+                                    <div class="long_line"></div>
+                                    <p>Synthetic cubism (1912–1919) was a further development of the genre of cubism, in which cut paper fragments – often wallpaper or portions of newspaper pages – were pasted into compositions, marking the first use of collage in fine art.</p>
+                                    <div class="long_line"></div>
+                                    <div>Read More →</div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li class="card">
+                        <div class="visual">
+                            <img src="images/layout4/career06_Pablo_Picasso_1921_Nu_assis_s'essuyant_le_pied.jpg" alt="Pablo Picasso - Nu assis s'essuyant le pied (1921)"/>
+                            <div class="visual_title">Pablo Picasso - Nu assis s'essuyant le pied (1921)</div>
+                        </div>
+                        <div class="content">
+                            <dl>
+                                <dt>Neoclassicism and surrealism</dt>
+                                <dd>
+                                    <div>1919 – 1929</div>
+                                    <div class="long_line"></div>
+                                    <p>In the period following the upheaval of World War I, Picasso produced work in a neoclassical style. This "return to order" is evident in the work of many European artists in the 1920s, including André Derain, Giorgio de Chirico, Gino Severini, Jean Metzinger, the artists of the New Objectivity movement and of the Novecento Italiano movement.</p>
+                                    <div class="long_line"></div>
+                                    <div>Read More →</div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                </ol>
+            </div>
+            <div class="clear"></div>
+            <footer>
+                <div id="footer_div">
+                    <ul id="footer1">
+                        <li><a href="index.html">index</a></li>
+                        <li><a href="layout1.html">layout1</a></li>
+                        <li><a href="layout2.html">layout2</a></li>
+                        <li><a href="layout3.html">layout3</a></li>
+                        <li><a href="layout4.html">layouy4</a></li>
+                    </ul>
+                    <p>2019221045 LEE SUZY</p>
+                    <p>Digital Publishing Disign</p>
+                </div>
+                <ul id="footer2">
+                    <li><img src="images/layout3_icon1.png"/></li>
+                    <li><img src="images/layout3_icon2.png"/></li>
+                    <li><img src="images/layout3_icon3.png"/></li>
+                    <li><img src="images/layout3_icon4.png"/></li>
+                    <div class="clear"></div>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>
